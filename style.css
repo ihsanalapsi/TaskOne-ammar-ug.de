@@ -1,0 +1,789 @@
+/* Reset and Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+/* Header Top Section */
+.header-top {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.header-top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-top div {
+    display: contents;
+    align-items: center;
+}
+
+.header-top div span {
+    margin-left: 15px;
+}
+
+.header-top div span a {
+    color: #fff;
+    text-decoration: none;
+}
+.header-top .container .left-side i {
+    color: #eca518;
+    font-size: 16px;
+}
+
+.header-top .container .social-media i {
+    
+    color: #eca518;
+
+}
+
+
+
+/* Navigation Bar */
+.navbar {
+    background-color: #000;
+    padding: 30px;
+    text-align: center;
+    
+}
+
+.navbar .container {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo */
+.logo img {
+    height: 50px;
+}
+
+/* Navigation Links */
+.nav-links a {
+    color: #eca518;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #b84c04;
+}
+
+.nav-links a.active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #eca518;
+    bottom: -5px;
+    left: 0;
+}
+
+/* Button */
+.quote-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #eca518;
+    color: #eca518;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.quote-button:hover {
+    background-color: #57b60a;
+    border: 1px solid #57b60a;
+
+    color: #ffffff;
+}
+
+
+/* الصورة الكبيرة مع النصوص */
+.hero-section {
+    background-image: url('images/image1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    color: #fff;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h4 {
+    font-size: 18px;
+    color: #b8c7ff;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.hero-content h2 {
+    font-size: 30px;
+    color: #e58d18;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.hero-content .buttons button {
+    background-color: #333333;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.hero-content .buttons .button2{
+    background-color: #ffab40;
+    color: #000;
+}
+.hero-content .buttons .button2:hover {
+    background-color: #78af1e;
+    color: #fff;
+}
+.hero-content .buttons button:hover {
+    background-color: #78af1e;
+}
+
+/* بوكس الحقول */
+.form-box {
+    
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: -30px auto 30px;
+    width: 80%;
+    max-width: 700px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 2;
+}
+
+.form-box input,
+.form-box button {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-box input {
+    flex: 1;
+    background-color: #fff;
+    color: #333;
+}
+
+.form-box button {
+    background-color: #e58d18;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-box button:hover {
+    background-color: #ffab40;
+}
+
+/* قسم "عنّا" */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin-left: 100px;
+    background-color: black;
+}
+
+.about-section img {
+    width: 80%;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.about-content h3 {
+    font-size: 24px;
+    color: #e58d18;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.about-content ul {
+    color: #fff;
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.about-content ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.about-content ul li i{
+
+    color: #ac7919;
+
+    font-size: 12px;
+    margin: 3px;
+    padding: 2px;
+}
+
+.about-content button {
+    background-color: #ac7919;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.about-content button:hover {
+    background-color: #4e7cfc;
+}
+
+ /* Our Achievements */
+.e-con-inner {
+    background-color: #ac7919;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px; 
+    max-width: calc(1200px - 100px); 
+    width: 100%;
+    padding: 0 50px; 
+}
+
+.itmes {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    color: #ffffff; 
+    position: relative; 
+}
+
+.itmes img {
+    height: 50px; 
+    width: 50px;
+}
+
+.itmes h2, .itmes h4 {
+    margin: 0; 
+}
+
+.itmes h4 {
+    font-size: 0.9rem; 
+    opacity: 0.8; 
+}
+
+
+.itmes:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -10px; 
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #ffffff;
+}
+
+
+
+
+
+/* What We Do */
+.Whatwedo {
+    background-color: #000000;
+    padding: 0px 100px;
+}
+.Whatwedo .text{
+    text-align: center;
+    
+}
+.Whatwedo .text h2{
+    font-size: 16px;
+    color: #ac7919;
+    padding-top: 20px;
+}
+.Whatwedo .text h1{
+    font-size: 32px;
+    color: #ac7919;
+    padding-top: 20px;
+}
+
+.Whatwedo .items {
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+
+}
+.Whatwedo .items .item img{
+    width: 100px;
+
+}
+.Whatwedo .items .item {
+    width: auto;
+    padding: 0 60px;
+
+}
+.Whatwedo .items .item h2{
+    font-size: 16px;
+    color: #e58d18;
+}
+.Whatwedo .items .item p{
+    font-size: 12px;
+    color: #fff;
+}
+
+
+
+
+
+.Whychooseus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.Whychooseus .left-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+
+.Whychooseus .container-rigt {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+}
+
+
+.Whychooseus .container-rigt .text-top h2 {
+    font-size: 1.5rem;
+    color: #ac7919;
+    margin: 0;
+}
+
+.Whychooseus .container-rigt .text-top h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #ac7919;
+}
+
+
+.Whychooseus .container-rigt .items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+    position: relative;
+    padding-left: 40px; 
+}
+
+
+.Whychooseus .container-rigt .items::before {
+    content: '';
+    position: absolute;
+    left: 22px; 
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #ac7919; 
+    z-index: 1; 
+}
+
+
+.Whychooseus .container-rigt .items .item {
+    position: relative;
+    padding-left: 30px; 
+}
+
+
+.Whychooseus .container-rigt .items .item::before {
+    border-radius: 2px;
+    content: '';
+    position: absolute;
+    left: -25px; 
+    top: -7px; 
+    width: 15px;
+    height: 15px;
+    background-color: #ac7919;
+    transform: rotate(45deg); 
+    z-index: 2; 
+}
+
+
+.Whychooseus .container-rigt .items .item h1 {
+    font-size: 1.25rem;
+    margin: 0 0 5px 0; 
+    color: #ac7919;
+}
+
+.Whychooseus .container-rigt .items .item p {
+    font-size: 1rem;
+    color: #fff;
+    margin: 0;
+}
+
+/* Projects Section */
+.projects-section {
+    text-align: center;
+    padding: 50px 0;
+    align-items: center;
+    justify-items: center;
+}
+
+.projects-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 100px
+}
+
+.title-section h3 {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.title-section h2 {
+    font-size: 28px;
+    color: #d4a23a;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.project-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    color: #000;
+    transition: transform 0.3s;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+
+.project-card p {
+    font-size: 16px;
+    font-style: italic;
+    color: #d4a23a;
+    padding: 10px 0;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+
+/* Arbeitsprozess Section */
+.arbeitsprozess-section {
+    padding: 50px 0;
+    align-items: center;
+    justify-items: center;
+}
+
+.title-section  {
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+.title-section h3 {
+    font-size: 16px;
+    color: #d4a23a;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.title-section h2 {
+
+    font-size: 32px;
+    color: #d4a23a;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.arbeitsprozess-section .steps-container .step {
+    width: 200px;
+    text-align: center;
+    color: #fff;
+}
+
+.arbeitsprozess-section .steps-container .step img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.arbeitsprozess-section .steps-container .step h4 {
+    font-size: 18px;
+    color: #d4a23a;
+    margin-bottom: 10px;
+}
+
+.arbeitsprozess-section .steps-container .step p {
+    font-size: 14px;
+    color: #fff;
+}
+
+
+/* Präsentation Section */
+.praesentation-section {
+    position: relative;
+    height: 600px; /* زيادة ارتفاع القسم */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    overflow: hidden;
+}
+
+.video-background iframe {
+    width: 177.78vh; /* 100% ارتفاع الشاشة للحفاظ على نسبة العرض إلى الارتفاع 16:9 */
+    height: 100vh;
+    pointer-events: none; /* تعطيل التفاعل مع الفيديو */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* التراكب الداكن */
+    z-index: 1;
+}
+
+.text-container {
+    position: relative;
+    z-index: 2;
+}
+
+.text-container h3 {
+    font-size: 16px;
+    color: #d4a23a;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.text-container h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    max-width: 800px;
+}
+
+
+/* Footer Styling */
+.footer {
+
+    position: relative;
+    background-color: #222;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-image: url('images/image1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.footer-content {
+    padding-left: 50px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    
+    flex: 1 1 30%;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    color: #f90;
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.footer-section a {
+    color: #ccc;
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: #f90;
+    text-decoration: underline;
+}
+
+.footer-section a::before {
+    content: '›';
+    margin-right: 8px;
+    color: #f90;
+    font-size: 12px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    margin: 6px 0;
+    color: #ccc;
+}
+
+.fixed-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #f90;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.fixed-button:hover {
+    background-color: #e68000;
+    transform: scale(1.05);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%; 
+    padding: 10px 50px;
+    color: gold;
+    font-size: 14px;
+    margin-top: 30px;
+    border-top: 1px solid gold;
+}
+
+.footer-bottom .left-text {
+    text-align: left; 
+}
+
+.footer-bottom .right-text {
+    text-align: right; 
+}
