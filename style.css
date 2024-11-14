@@ -834,3 +834,51 @@ body {
     background-color: rgba(0, 0, 0, 0.5); 
     z-index: 1;
 }
+
+.whatwedo-Aboutus .container {
+    margin-top: 0px;
+    display: flex;
+    
+}
+.whatwedo-Aboutus .container img{
+    width: 500px;
+}
+.whatwedo-Aboutus .container .rigt-section .titels h2{
+    
+    color: #57b60a;
+    margin-bottom: 20px;
+}
+.whatwedo-Aboutus .container .rigt-section .titels h1{
+  
+    font-size: 35px;
+    color: #464646;
+    
+}
+.whatwedo-Aboutus .container .rigt-section .titels p{
+    font-size: 16px;
+    color: #464646;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.whatwedo-Aboutus .container .rigt-section .items  {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px;
+
+}
+.whatwedo-Aboutus .container .rigt-section .items .item h1{
+    font-weight: normal;
+    font-size: 40px;
+    color: #464646;
+}
+.whatwedo-Aboutus .container .rigt-section .items .item p{
+    font-size: 13px;
+    color: #57b60a;
+}
+
+.whatwedo-Aboutus .container .rigt-section h1{
+    color: #4e7cfc;
+    font-size: 20px;
+    margin-top: 10px;
+}
