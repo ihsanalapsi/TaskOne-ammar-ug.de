@@ -792,7 +792,7 @@ body {
 /* About Us section */
 .about-us {
     width: 100%; 
-    height: 400px;
+    height: 100%;
     position: relative; 
     overflow: hidden; 
 }
@@ -820,7 +820,7 @@ body {
 }
 
 .about-us img {
-    width: 1400px; 
+    width: 2400px; 
     height: 300px;
     object-fit: cover;
 }
@@ -834,13 +834,23 @@ body {
     background-color: rgba(0, 0, 0, 0.5); 
     z-index: 1;
 }
+.whatwedo-Aboutus {
+    display: flex;                  
+    justify-content: center;        
+    align-items: center;           
+    min-height: 100vh;             
+}
 
 .whatwedo-Aboutus .container {
-    margin-top: 0px;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 40px;
+    
     display: flex;
     
 }
 .whatwedo-Aboutus .container img{
+    
     width: 500px;
 }
 .whatwedo-Aboutus .container .rigt-section .titels h2{
@@ -881,4 +891,341 @@ body {
     color: #4e7cfc;
     font-size: 20px;
     margin-top: 10px;
+}
+
+
+.advantages-section {
+    display: flex;                  
+    justify-content: center;        
+    align-items: center;           
+    min-height: 100vh;   
+    width: 100%;
+    height: 600px;
+    display: flex;
+    padding: 50px;
+    gap: 20px;
+    position: relative;
+}
+
+.advantages-section .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/image1.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.advantages-section .background-image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(36, 126, 211, 0.8); 
+    backdrop-filter: blur(3px); 
+}
+
+.advantages-section  .left-section, .right-section {
+    
+    justify-content: center;
+    position: relative;
+    z-index: 1; 
+}
+
+.advantages-section  .left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feature {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    color: #b1ff32;
+    font-size: 24px;
+}
+
+.feature h3 {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.feature p {
+    color: #ffffff;
+}
+
+.right-section {
+    
+    flex: 1;
+    padding: 20px;
+}
+
+.right-section h2 {
+    color: #b1ff32;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.right-section h1 {
+    color: #fff;
+
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+
+.progress-bar {
+    margin: 10px 0;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px; 
+}
+
+.name {
+    color: #fff;
+    font-size: 13px;
+}
+
+.percentage {
+    color: #fff;
+    
+    font-size: 13px;
+}
+
+.bar {
+    width: 100%;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.bar div {
+    height: 100%;
+    background-color: #b1ff32;
+}
+
+
+
+
+/* Container for the entire section */
+.roadmap-section {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    z-index: 1;
+}
+
+/* Background image with overlay */
+.roadmap-section .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/image1.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0; 
+}
+
+.roadmap-section .background-image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(36, 126, 211, 0.5); 
+    backdrop-filter: blur(3px); 
+    z-index: 1;
+}
+
+/* Header styling */
+.roadmap-section .roadmap-header {
+    z-index: 2;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.roadmap-section .roadmap-header h3 {
+    color: #e6ef00;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.roadmap-section .roadmap-header h1 {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation Bar with Arrows */
+.roadmap-section .roadmap-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.roadmap-section .roadmap-navigation .nav-arrow {
+    background-color: #e6ef00;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.roadmap-section .roadmap-navigation .timeline {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 0 15px;
+}
+
+.roadmap-section .roadmap-navigation .timeline span {
+    color: #333;
+    font-size: 14px;
+}
+/* Cards styling */
+.roadmap-cards {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease; 
+}
+
+.roadmap-cards .card {
+    flex: 0 0 calc(33.33% - 20px); 
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.roadmap-cards .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.roadmap-cards .card h2 {
+    color: #333;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.roadmap-cards .card p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Hover effect for cards */
+.roadmap-cards .card:hover {
+    transform: scale(1.05);
+}
+
+/* Hide extra cards after the third */
+.roadmap-cards .card:nth-child(n+4) {
+    display: none;
+}
+
+/* Styling for navigation buttons */
+.roadmap-navigation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.roadmap-navigation button {
+    background-color: #00ff57;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.roadmap-navigation button:hover {
+    background-color: #00cc45;
+}
+
+
+/* تنسيق قسم الفريق */
+.team-section {
+    justify-content: center;
+    justify-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* عنوان القسم */
+.team-section .header {
+    margin-top: 25px;
+    color: #00cc45;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* العنوان الفرعي */
+.team-section .subheader {
+    color: #e6ef00;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* حاوية الكروت */
+.team-section .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* تنسيق الكروت الفردية */
+.team-section .container .card {
+
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 200px; 
+    text-align: center;
+    padding: 10px;
+}
+
+/* صورة داخل الكارت */
+.team-section .container .card .card-image {
+    width: 100%;
+    height: auto;
 }
