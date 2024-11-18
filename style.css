@@ -697,6 +697,7 @@ body {
 }
 
 .footer-content {
+
     padding-left: 50px;
     position: relative;
     z-index: 2;
@@ -706,7 +707,7 @@ body {
 }
 
 .footer-section {
-    
+
     flex: 1 1 30%;
     min-width: 200px;
     margin: 10px;
@@ -1186,7 +1187,6 @@ body {
     margin-bottom: 30px;
 }
 
-/* عنوان القسم */
 .team-section .header {
     margin-top: 25px;
     color: #00cc45;
@@ -1196,7 +1196,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* العنوان الفرعي */
 .team-section .subheader {
     color: #e6ef00;
     font-size: 30px;
@@ -1204,7 +1203,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* حاوية الكروت */
 .team-section .container {
     display: flex;
     justify-content: center;
@@ -1212,7 +1210,6 @@ body {
     gap: 15px;
 }
 
-/* تنسيق الكروت الفردية */
 .team-section .container .card {
 
     background-color: #fff;
@@ -1224,8 +1221,368 @@ body {
     padding: 10px;
 }
 
-/* صورة داخل الكارت */
 .team-section .container .card .card-image {
     width: 100%;
+    height: auto;
+}
+
+/* services section */
+
+.services {
+    width: 100%; 
+    height: 100%;
+    position: relative; 
+    overflow: hidden; 
+}
+
+.services .title {
+    z-index: 4;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    top: 40%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+.services .title h1 {
+    color: #000000;
+    font-size: 60px;
+}
+
+.services img {
+
+    width: 300vh; 
+    height: 300px;
+
+    object-fit: cover;
+}
+
+.services .overlay {
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+.services .container {
+margin: 20px;
+
+}
+
+.why-choose-us{
+    justify-content: center;
+    justify-items: center;
+}
+
+.why-choose-us .container{
+
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    margin-top: 50px;
+    display: grid;
+}
+
+.why-choose-us .container .titles h1{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.why-choose-us .container .titles h2{
+    color: #d4a23a;
+    margin-bottom: 20px;
+    font-size: 30px;
+
+}
+.why-choose-us .container .titles h3{
+    color: #fff;
+}
+.why-choose-us .container .items i{
+    color: #d4a23a;
+}
+.why-choose-us .container .items {
+    display: flex;
+    margin-top: 30px;
+    padding: 20px 10px 20px 20px ;
+    color: #fff;
+}
+.why-choose-us .container .items .rigt-item {
+    display: grid;
+    padding-left: 40%;
+}
+.why-choose-us .container .items .left-item {
+    display: grid;
+    
+
+}
+
+
+.exceptional-services {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 90%; 
+    margin: 100px auto; 
+}
+
+.exceptional-services .container {
+    display: grid; 
+    width: 100%; 
+}
+
+.exceptional-services .container .titles {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+}
+
+.exceptional-services .container .titles h2 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.exceptional-services .container .titles h1 {
+    color: #ac7919;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.exceptional-services .container .titles p {
+    color: #fff;    
+    margin-top: 10px;
+    font-size: 25;
+    margin-bottom: 20px;
+}
+
+.exceptional-services .container .items {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.exceptional-services .container .items .item {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    flex: 0 1 calc(25% - 10px); 
+    margin-bottom: 20px; 
+}
+
+.exceptional-services .container .items .item h1 {
+    color: #ac7919;
+    font-size: 19px;
+}
+
+.exceptional-services .container .items .item p {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.exceptional-services .container .items .item img {
+    width: 60px;
+    height: 60px;
+    margin-top: 15px;
+}
+
+
+.working-time-schedule {
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+.working-time-schedule .container {
+    
+    display: grid;
+    text-align: center;
+}
+
+.working-time-schedule .container .header {
+    color: #fff;
+    padding: 1em; 
+    border-radius: 15px;
+    margin-bottom: 1em; 
+    position: relative; 
+    top: 0; 
+}
+
+.working-time-schedule .container .header h1 {
+    color: #fff;
+    font-size: 16px;
+}
+
+.working-time-schedule .container .header h2 {
+    margin-top: 20px;
+    color: #ac7919;
+    font-size: 44px;
+}
+
+.working-time-schedule .container h1 {
+    font-size: 2em;
+    margin-bottom: 0.2em; 
+}
+
+.working-time-schedule .container h2 {
+    font-size: 1.5em;
+    margin-bottom: 0; 
+}
+
+.working-time-schedule .container .table-container {
+    margin: 0 auto; 
+}
+
+.working-time-schedule .container table {
+    width: 800px; 
+    max-width: 800px; 
+    border-collapse: collapse;
+    border-radius: 15px; 
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #da9d2c; 
+    color: black; 
+    transition: background-color 0.3s ease; 
+    margin-bottom: 40px;
+}
+
+.working-time-schedule .container table td {
+    padding: 1em 2em; 
+    text-align: left; 
+    border: none;
+}
+
+.working-time-schedule .container table td.time {
+    text-align: right; 
+    font-weight: bold; 
+}
+
+.working-time-schedule .container table tr:hover {
+    background-color: #fff; 
+    color: black; 
+}
+
+.working-time-schedule .container table tr:last-child {
+    background-color: #555; 
+    color: #fff; 
+}
+
+.working-time-schedule .container table tr:last-child:hover {
+    background-color: #444; 
+}
+
+
+.working-time-schedule .container table tr td {
+    border-bottom: 1px solid #ccc; 
+}
+
+
+
+
+
+
+
+
+.need-cleaning-services {
+    position: relative;
+    width: 100%; 
+    max-width: 1300px; 
+    height: 400px;
+    margin: 50px auto; 
+    background: url('images/image-9.jpg') center/contain no-repeat; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    overflow: hidden;
+    background-color: #000; 
+}
+
+
+.need-cleaning-services .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    z-index: 1;
+}
+
+
+.need-cleaning-services .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    z-index: 2;
+    color: #fff;
+}
+
+
+.need-cleaning-services .left {
+    max-width: 50%;
+}
+
+.need-cleaning-services .left h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.need-cleaning-services .left h2 {
+    font-size: 2rem;
+    color: #ac7919;
+    margin: 10px 0; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.need-cleaning-services .left p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+
+.need-cleaning-services .left .contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 1px 15px;
+    color: #fff;
+    margin-left: 0px;
+    margin-top: 10px; 
+}
+
+.need-cleaning-services .left .contact .icon {
+    color: #d4a23a;
+    width: 24px;
+    height: 24px;
+}
+
+.need-cleaning-services .left .contact p {
+    margin: 0; 
+}
+
+.need-cleaning-services .left .contact span {
+    margin-left: 5px; 
+}
+
+
+.need-cleaning-services .right {
+    text-align: right;
+    color: #ac7919;
+}
+.need-cleaning-services .right .logo {
+    width: 300px;
+    max-width: 100%; 
     height: auto;
 }
