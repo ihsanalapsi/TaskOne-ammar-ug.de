@@ -1884,3 +1884,89 @@ margin: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+
+
+/* تصميم القسم */
+.newsletter-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* الطول 400 بكسل */
+    
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .newsletter-section .container {
+    margin-bottom: 50px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* تصميم الخلفية مع التغطية */
+  .newsletter-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* العرض 100% */
+    height: 100%; /* جعل الطول مساويًا لطول القسم */
+    background: url('/images/image-7.jpg') no-repeat center center/cover;
+    z-index: 1;
+    opacity: 0.5; /* جعل الصورة شفافة قليلاً */
+  }
+  
+  /* مركزية المحتوى */
+  .newsletter-section .newsletter-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6); /* خلفية شفافة */
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    width: 90%;
+    max-width: 800px;
+  }
+  
+  /* تصميم العنوان */
+  .newsletter-section .newsletter-container .newsletter-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  /* تصميم النموذج */
+  .newsletter-section .newsletter-container .newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .newsletter-section .newsletter-container .newsletter-form .newsletter-input {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    flex-grow: 1;
+  }
+  
+  .newsletter-section .newsletter-container .newsletter-form .newsletter-button {
+    background-color: #cfa842;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .newsletter-section .newsletter-container .newsletter-form .newsletter-button:hover {
+    background-color: #b38a35;
+  }
+  
