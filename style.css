@@ -614,7 +614,7 @@ body {
 /* Präsentation Section */
 .praesentation-section {
     position: relative;
-    height: 600px; /* زيادة ارتفاع القسم */
+    height: 600px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -635,18 +635,18 @@ body {
 }
 
 .video-background iframe {
-    width: 177.78vh; /* 100% ارتفاع الشاشة للحفاظ على نسبة العرض إلى الارتفاع 16:9 */
+    width: 177.78vh; 
     height: 100vh;
-    pointer-events: none; /* تعطيل التفاعل مع الفيديو */
+    pointer-events: none; 
 }
 
-.overlay {
+.praesentation-sectio .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* التراكب الداكن */
+    background-color: rgba(0, 0, 0, 0.5); 
     z-index: 1;
 }
 
@@ -1254,11 +1254,10 @@ body {
     font-size: 60px;
 }
 
-.services ,.contact img {
+.services ,.contact .image img {
 
     width: 300vh; 
     height: 300px;
-
     object-fit: cover;
 }
 
@@ -1892,7 +1891,7 @@ margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px; /* الطول 400 بكسل */
+    height: 300px; 
     
     position: relative;
     overflow: hidden;
@@ -1905,26 +1904,24 @@ margin: 20px;
     height: 100%;
   }
   
-  /* تصميم الخلفية مع التغطية */
   .newsletter-section .overlay {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%; /* العرض 100% */
-    height: 100%; /* جعل الطول مساويًا لطول القسم */
+    width: 100%; 
+    height: 100%; 
     background: url('/images/image-7.jpg') no-repeat center center/cover;
     z-index: 1;
-    opacity: 0.5; /* جعل الصورة شفافة قليلاً */
+    opacity: 0.5; 
   }
   
-  /* مركزية المحتوى */
   .newsletter-section .newsletter-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.6); /* خلفية شفافة */
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     text-align: center;
     padding: 20px;
@@ -1933,13 +1930,11 @@ margin: 20px;
     max-width: 800px;
   }
   
-  /* تصميم العنوان */
   .newsletter-section .newsletter-container .newsletter-title {
     font-size: 1.8rem;
     margin-bottom: 20px;
   }
   
-  /* تصميم النموذج */
   .newsletter-section .newsletter-container .newsletter-form {
     display: flex;
     justify-content: center;
