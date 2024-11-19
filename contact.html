@@ -46,7 +46,7 @@
             <a href="index.html" class="active">STARTSEITE</a>
             <a href="about-us.html">ÜBER UNS</a>
             <a href="services.html">DIENSTLEISTUNGEN</a>
-            <a href="#">KONTAKT</a>
+            <a href="contact.html">KONTAKT</a>
         </div>
         <!-- Quote Button -->
         <a href="#" class="quote-button">Ein Angebot bekommen</a>
@@ -159,7 +159,37 @@
     </div>
 </section>
 
+<section class="faq-section">
+    <div class="container">
+        <div class="faq-header">
+            <h1>FAQ</h1>
+            <p>Hier finden Sie die am häufigsten gestellten Fragen zu unserem Unternehmen Ammar Gebäudereinigung</p>
+        </div>
 
+        <div class="faq-questions">
+            <div class="faq-item">
+                <div class="question">Muss ich Reinigungsmittel und -geräte bereitstellen?</div>
+                <div class="answer">
+                    Was drawing natural fat respect husband. An as noisy an offer drawn blush place. These tried for way joy wrote witty. In mr began music weeks after at begin. Education no dejection so direction pretended household do to. Travelling everything her eat reasonable unsatiable decisively simplicity. Morning request be lasting it fortune demands highest of.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="question">Bieten Sie Reinigungsdienste für Gewerbeimmobilien an?</div>
+                <div class="answer">
+                    Was drawing natural fat respect husband. An as noisy an offer drawn blush place. These tried for way joy wrote witty. In mr began music weeks after at begin. Education no dejection so direction pretended household do to. Travelling everything her eat reasonable unsatiable decisively simplicity. Morning request be lasting it fortune demands highest of.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="question">Fällt eine Stornogebühr an, wenn ich meinen Termin verschieben oder stornieren muss?</div>
+                <div class="answer">
+                    Was drawing natural fat respect husband. An as noisy an offer drawn blush place. These tried for way joy wrote witty. In mr began music weeks after at begin. Education no dejection so direction pretended household do to. Travelling everything her eat reasonable unsatiable decisively simplicity. Morning request be lasting it fortune demands highest of.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <script>
     document.querySelector(".message-section button").addEventListener("click", function (e) {
@@ -197,6 +227,22 @@
     } else {
         alert("Das Formular wurde erfolgreich ausgefüllt! Ihre Nachricht wird gesendet.");
     }
+});
+
+
+
+
+document.querySelectorAll('.faq-item .question').forEach(question => {
+    question.addEventListener('click', function() {
+        const faqItem = this.parentElement;
+
+        const openFaqItem = document.querySelector('.faq-item.active');
+        if (openFaqItem && openFaqItem !== faqItem) {
+            openFaqItem.classList.remove('active');
+        }
+
+        faqItem.classList.toggle('active');
+    });
 });
 
 </script>

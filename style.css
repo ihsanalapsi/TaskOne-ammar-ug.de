@@ -1813,3 +1813,74 @@ margin: 20px;
 .contact-form .message-section button:hover {
     background-color: #c9771e;
 }
+
+
+
+.faq-section {
+    
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.container {
+    display: inline;
+    max-width: 800px;
+    width: 100%;
+}
+
+.faq-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.faq-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.faq-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.faq-questions {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    overflow: hidden;
+}
+
+.faq-item .question {
+    padding: 15px;
+    background-color: #e6e6e6; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.faq-item .question:hover {
+    background-color: #d4d4d4; 
+}
+
+.faq-item .answer {
+    display: none;
+    padding: 15px;
+    background-color: #fff; 
+}
+
+.faq-item.active .answer {
+    display: block; 
+}
+
+.faq-item .question {
+    max-height: 90px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
